@@ -29,8 +29,8 @@ function App() {
           <h1>
             Hi, I'm <span>Sumanth</span>
           </h1>
-          <h2>Full Stack Developer | AI & ML Enthusiast</h2>
-          <p>I create modern web and mobile experiences with creativity and logic.</p>
+          <h2>AI/ML Developer & Data Science Enthusiast</h2>
+          <p>I build intelligent AI models and data-driven applications to solve real-world problems.</p>
           <a href="#contact" className="btn">
             Get In Touch
           </a>
@@ -44,39 +44,41 @@ function App() {
           <div className="about-text">
             <h1>My Journey</h1>
             <p>
-              👋 Hey there! I’m <b>Sumanth</b>, a passionate <b>Full Stack Developer</b> who loves
-              turning creative ideas into impactful digital experiences. I specialize in building
-              clean, scalable, and user-friendly <b>web</b> and <b>mobile applications</b> using{" "}
-              <b>React.js</b>, <b>Flutter</b>, <b>Firebase</b>, and other modern technologies.
+              👋 Hey there! I’m <b>Sumanth</b>, a passionate <b>AI/ML Developer</b> &{" "}
+              <b>Data Science Enthusiast</b> who loves working with data to build smart
+              applications. I specialize in <b>Machine Learning</b>, <b>Deep Learning</b>,
+              and <b>Computer Vision</b> using <b>Python</b>, <b>TensorFlow</b>,{" "}
+              <b>Pandas</b>, and other modern data tools.
             </p>
 
             <p>
-              💡 My journey in tech began with curiosity — how a few lines of code could bring ideas
-              to life. Since then, I’ve focused on creating solutions that blend <b>creativity</b>,{" "}
-              <b>logic</b>, and <b>innovation</b> to make technology both powerful and beautiful.
+              💡 My journey in tech began with curiosity — how machines can "learn" from
+              data instead of just following rules. Since then, I’ve shifted my focus
+              completely to <b>Data Science</b> because I enjoy finding patterns,
+              solving complex problems, and building logic that makes a real difference.
             </p>
             <br />
 
             <div className="about-highlight">
               <p>
-                🚀 Beyond full stack development, I’m fascinated by{" "}
-                <b>Artificial Intelligence</b> and <b>Machine Learning</b>. I love exploring how AI
-                can enhance user experiences, automate workflows, and build intelligent systems that
-                make a real impact.
+                🚀 Beyond just coding, I’m fascinated by how{" "}
+                <b>Artificial Intelligence</b> can solve real-world challenges. I love
+                exploring how data can automate tasks, predict outcomes, and build
+                intelligent systems that help people.
               </p>
             </div>
 
             <p>
-              🧠 Whether it’s developing a real-time multiplayer quiz app like{" "}
-              <b>MindMatch</b> or designing an AI-powered retina disease classifier like{" "}
-              <b>RetinaVision</b>, I always strive to create products that are{" "}
-              <b>smart</b>, <b>efficient</b>, and <b>visually engaging</b>.
+              🧠 Whether it’s designing a medical AI tool like my{" "}
+              <b>Retina Disease Classifier</b> (which detects 6 diseases with 98%
+              accuracy) or analyzing complex datasets, I always strive to create
+              projects that are <b>smart</b>, <b>accurate</b>, and <b>impactful</b>.
             </p>
 
             <p>
-              🌱 I’m constantly learning, experimenting with new tools, and pushing creative
-              boundaries — because I believe every project is an opportunity to build something
-              meaningful.
+              🌱 I’m constantly learning new algorithms, reading about AI trends, and
+              experimenting with new models — because I believe <b>Data</b> has the
+              power to change the future.
             </p>
           </div>
         </div>
@@ -165,19 +167,42 @@ function App() {
       </section>
 
       {/* ===== SKILLS ===== */}
+      {/* ===== SKILLS ===== */}
       <section id="skills" className="skills" data-aos="fade-up">
         <h2>Skills</h2>
+
+        {/* Category 1: Full Stack Development */}
+        <h3 className="skill-category-title">Full Stack Development</h3>
         <div className="skill-grid">
           {[
             "HTML / CSS / JavaScript",
             "React.js",
             "Flutter",
             "Firebase",
-            "Python",
             "Java",
             "C",
-            "AI / ML",
             "SQL / MongoDB",
+            "Python",
+          ].map((skill, index) => (
+            <div className="skill-box" key={index}>
+              {skill}
+            </div>
+          ))}
+        </div>
+
+        {/* Category 2: Data Science & Machine Learning (NEW) */}
+        <br />
+        <h3 className="skill-category-title">Data Science & Machine Learning</h3>
+        <div className="skill-grid">
+          {[
+            "Data Preprocessing",
+            "Data Visualization",
+            "NumPy",
+            "pandas",
+            "scikit-learn",
+            "Model Training & Evaluation",
+            "Deep Learning (CNN)",
+            "TensorFlow (basic)",
           ].map((skill, index) => (
             <div className="skill-box" key={index}>
               {skill}
@@ -185,39 +210,13 @@ function App() {
           ))}
         </div>
       </section>
-
       {/* ===== PROJECTS ===== */}
       <section id="projects" className="projects" data-aos="fade-up">
   <h2 className="section-title">Projects</h2>
 
   <div className="project-container">
-    {/* MindMatch Project */}
-    <div className="project-card">
-      <img
-        src={require("./MindMatch.png")}
-        alt="MindMatch Project Screenshot"
-        className="project-image"
-      />
-      <h3>MindMatch – Real-Time Quiz App</h3>
-      <ul>
-        <li>
-          Built a multiplayer quiz battle app using <b>Flutter</b> and <b>Firebase</b> with
-          authentication, real-time gameplay, and animated result tracking.
-        </li>
-        <li>
-          Implemented Firestore-based match system with question sets, timers, and responsive UI
-          for web and mobile.
-        </li>
-      </ul>
-      <br></br>
-      <h5>Technique used</h5>
-      <div className="tech-tags">
-        <span>Flutter,</span>
-        <span>Firebase,</span>
-        <span>Firestore,</span>
-        <span>Real-time DB</span>
-      </div>
-    </div>
+    
+    
 
     {/* RetinaVision Project */}
     <div className="project-card">
@@ -244,6 +243,32 @@ function App() {
         <span>TensorFlow,</span>
         <span>Python,</span>
         <span>AI/ML</span>
+      </div>
+    </div>
+    <div className="project-card">
+      <img
+        src={require("./MindMatch.png")}
+        alt="MindMatch Project Screenshot"
+        className="project-image"
+      />
+      <h3>MindMatch – Real-Time Quiz App</h3>
+      <ul>
+        <li>
+          Built a multiplayer quiz battle app using <b>Flutter</b> and <b>Firebase</b> with
+          authentication, real-time gameplay, and animated result tracking.
+        </li>
+        <li>
+          Implemented Firestore-based match system with question sets, timers, and responsive UI
+          for web and mobile.
+        </li>
+      </ul>
+      <br></br>
+      <h5>Technique used</h5>
+      <div className="tech-tags">
+        <span>Flutter,</span>
+        <span>Firebase,</span>
+        <span>Firestore,</span>
+        <span>Real-time DB</span>
       </div>
     </div>
   </div>
