@@ -247,28 +247,27 @@ function App() {
     </div>
     <div className="project-card">
       <img
-        src={require("./MindMatch.png")}
-        alt="MindMatch Project Screenshot"
+        src={require("./AIDocument.png")}
+        alt="AI Document Project Screenshot"
         className="project-image"
       />
-      <h3>MindMatch – Real-Time Quiz App</h3>
+      <h3>AI Document – Intelligent Document Q&A and Summarization</h3>
       <ul>
         <li>
-          Built a multiplayer quiz battle app using <b>Flutter</b> and <b>Firebase</b> with
-          authentication, real-time gameplay, and animated result tracking.
+          Developed an AI-based application that allows users to upload PDF or TXT documents and automatically generate summaries and answers to user queries.
         </li>
         <li>
-          Implemented Firestore-based match system with question sets, timers, and responsive UI
-          for web and mobile.
+          Implemented a Retrieval-Augmented Generation (RAG) pipeline using <b>LangChain</b>, <b>HuggingFace embeddings</b>, vector database, and <b>Ollama LLM</b>, along with a responsive <b>Streamlit</b> interface for interactive document chat.
         </li>
       </ul>
       <br></br>
       <h5>Technique used</h5>
       <div className="tech-tags">
-        <span>Flutter,</span>
-        <span>Firebase,</span>
-        <span>Firestore,</span>
-        <span>Real-time DB</span>
+        <span>LangChain,</span>
+        <span>HuggingFace,</span>
+        <span>Vector DB,</span>
+        <span>Ollama,</span>
+        <span>Streamlit</span>
       </div>
     </div>
   </div>
@@ -292,6 +291,17 @@ function App() {
             rel="noopener noreferrer"
           >
             github.com/Sumanth-shetty2025
+          </a>
+        </p>
+
+        <p>
+          🔗 <b>LinkedIn:</b>{" "}
+          <a
+            href="https://www.linkedin.com/in/sumanth-546783303"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.linkedin.com/in/sumanth-546783303
           </a>
         </p>
       </section>
