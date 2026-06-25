@@ -15,6 +15,7 @@ function App() {
         <div className="logo">Sumanth</div>
         <nav>
           <a href="#home">Home</a>
+          <a href="#highlights">Highlights</a>
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#skills">Skills</a>
@@ -31,9 +32,58 @@ function App() {
           </h1>
           <h2>AI/ML Developer & Data Science Enthusiast</h2>
           <p>I build intelligent AI models and data-driven applications to solve real-world problems.</p>
+          <div className="hero-stats" aria-label="Portfolio highlights">
+            <div className="hero-stat">
+              <strong>2+</strong>
+              <span>featured AI apps</span>
+            </div>
+            <div className="hero-stat">
+              <strong>4</strong>
+              <span>core education milestones</span>
+            </div>
+            <div className="hero-stat">
+              <strong>10+</strong>
+              <span>technical skill areas</span>
+            </div>
+          </div>
           <a href="#contact" className="btn">
             Get In Touch
           </a>
+        </div>
+      </section>
+
+      {/* ===== HIGHLIGHTS ===== */}
+      <section id="highlights" className="highlights" data-aos="fade-up">
+        <h2>Portfolio Highlights</h2>
+        <p className="section-intro">
+          A quick view of what this portfolio currently features across projects, skills, and presentation.
+        </p>
+
+        <div className="highlight-grid">
+          <div className="highlight-card">
+            <h3>AI-focused projects</h3>
+            <p>
+              RetinaVision and AI Document showcase computer vision, retrieval-augmented generation, and practical AI workflows.
+            </p>
+          </div>
+          <div className="highlight-card">
+            <h3>Technical breadth</h3>
+            <p>
+              The skills section covers front-end development, mobile basics, databases, Python, and machine learning foundations.
+            </p>
+          </div>
+          <div className="highlight-card">
+            <h3>Academic profile</h3>
+            <p>
+              Education history highlights MCA, BSc, PUC, and SSLC milestones with results and institution details.
+            </p>
+          </div>
+          <div className="highlight-card">
+            <h3>Easy contact</h3>
+            <p>
+              Visitors can quickly reach you through email, GitHub, or LinkedIn from the contact section.
+            </p>
+          </div>
         </div>
       </section>
 
