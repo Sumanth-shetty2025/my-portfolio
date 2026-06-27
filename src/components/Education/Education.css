@@ -1,0 +1,47 @@
+/* ===== EDUCATION ===== */
+.education-section {
+  padding: 100px 10%;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 20px;
+}
+
+.education-section h2 {
+  margin-bottom: 40px;
+  color: #38bdf8;
+}
+
+.edu-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  padding: 25px;
+  margin: 25px auto;
+  width: 80%;
+  border-left: 5px solid #38bdf8;
+  border-radius: 12px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.edu-card h3 {
+  color: #f8fafc;
+}
+
+.edu-details p {
+  color: #94a3b8;
+  margin: 5px 0;
+}
+
+.edu-desc {
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .edu-card {
+    width: 95%;
+  }
+}

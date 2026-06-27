@@ -1,0 +1,23 @@
+/* ===== CONTACT ===== */
+.contact {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  padding: 100px 10%;
+  border-radius: 20px 20px 0 0;
+}
+
+.contact p {
+  margin: 12px 0;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  color: #0ea5e9;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+}
